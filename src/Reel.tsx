@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AbsoluteFill, Audio, cancelRender, continueRender, delayRender, staticFile } from "remotion";
 import { waitUntilDone } from "./theme";
+import { SHOW_CAPTIONS } from "./timings";
 import { Captions } from "./components/Captions";
 import { ZoomVideo } from "./components/ZoomVideo";
 import { Hook } from "./scenes/Hook";
@@ -10,6 +11,10 @@ import { Problem } from "./scenes/Problem";
 import { Director } from "./scenes/Director";
 import { Connect } from "./scenes/Connect";
 import { Monthly } from "./scenes/Monthly";
+import { Clients } from "./scenes/Clients";
+import { Goal } from "./scenes/Goal";
+import { Support } from "./scenes/Support";
+import { Closing } from "./scenes/Closing";
 
 export const Reel: React.FC = () => {
   // Block rendering until Poppins 600/700 is loaded.
@@ -35,10 +40,13 @@ export const Reel: React.FC = () => {
       <Director />
       <Connect />
       <Monthly />
-      {/* Next scenes go here (clients, goal, support, closing) */}
+      <Clients />
+      <Goal />
+      <Support />
+      <Closing />
 
-      {/* Captions are always on top of the overlays */}
-      <Captions />
+      {/* Captions (off by default, see SHOW_CAPTIONS in timings.ts) */}
+      {SHOW_CAPTIONS ? <Captions /> : null}
     </AbsoluteFill>
   );
 };

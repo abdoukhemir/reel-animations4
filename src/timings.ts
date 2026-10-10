@@ -3,6 +3,9 @@ export const FPS = 30;
 /** Voice track is 64.29 s -> 1929 frames at 30 fps. */
 export const DURATION_FRAMES = 1929;
 
+/** Word-by-word captions on/off. The component is kept; set to true to bring them back. */
+export const SHOW_CAPTIONS = false;
+
 /** Shifts every overlay AND every sound together (seconds, can be negative). */
 export const OVERLAY_OFFSET = 0;
 
@@ -94,6 +97,7 @@ export const TRIGGERS: Trigger[] = [
   { id: "monthly-mois", word: "mois", after: 39.4 },
   { id: "monthly-evoluer", word: "evoluer", after: 40.3 },
   // Clients: what is already in place
+  { id: "clients-mettons", word: "mettons", after: 43.6 },
   { id: "clients-clients", word: "clients", after: 44.4 },
   { id: "clients-agents", word: "agents", after: 44.8 },
   { id: "clients-loops", word: "loops", after: 45.5 },
@@ -105,12 +109,17 @@ export const TRIGGERS: Trigger[] = [
   // Goal: save time, stay on top of AI
   { id: "goal-objectif", word: "objectif", after: 53.1 },
   { id: "goal-gagner", word: "gagner", after: 54.2 },
+  { id: "goal-rester", word: "rester", after: 55.8 },
   { id: "goal-top", word: "top", after: 56.3 },
+  { id: "support-accompagner", word: "accompagner", after: 57.2 },
   // Support over time
   { id: "support-duree", word: "duree", after: 58 },
   { id: "support-decisif", word: "decisif", after: 59.1 },
+  { id: "support-izaia", word: "izaia", after: 60.3 },
+  { id: "closing-fait", word: "fait", after: 61.5 },
   // Closing: "on fait les deux", "À très bientôt chez IZAIA !"
   { id: "closing-deux", word: "deux", after: 61.9 },
   { id: "closing-bientot", word: "bientot", after: 62.8 },
+  { id: "closing-chez", word: "chez", after: 63.3 },
   { id: "closing-izaia", word: "izaia", after: 63.5 },
 ];
