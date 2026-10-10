@@ -139,3 +139,57 @@ export const AnimatedCheck: React.FC<IconProps & { enterFrame: number }> = ({
     </svg>
   );
 };
+
+
+/** Gear: eight teeth around a ring. Designed for a beige chip. */
+export const GearIcon: React.FC<IconProps> = ({ size = 56 }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
+    <g transform="translate(32 32)">
+      {[0, 45, 90, 135].map((a) => (
+        <rect key={a} x={-5} y={-29} width={10} height={58} rx={4} fill={COLORS.orange} transform={`rotate(${a})`} />
+      ))}
+      <circle r={21} fill={COLORS.orange} />
+      <circle r={9} fill={COLORS.beige} />
+    </g>
+  </svg>
+);
+
+/** Code window with "</>" . */
+export const CodeIcon: React.FC<IconProps> = ({ size = 56 }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
+    <rect x="4" y="10" width="56" height="44" rx="10" fill={COLORS.darkBlue} />
+    <path d="M26 24 L16 32 L26 40" fill="none" stroke={COLORS.white} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M38 24 L48 32 L38 40" fill="none" stroke={COLORS.orange} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+/** Ring that fills up to ~92% shortly after enterFrame. */
+export const RingIcon: React.FC<IconProps & { enterFrame: number }> = ({ size = 56, enterFrame }) => {
+  const frame = useCurrentFrame();
+  const p =
+    0.92 *
+    interpolate(frame, [enterFrame + 4, enterFrame + 34], [0, 1], {
+      easing: Easing.out(Easing.cubic),
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    });
+  const circ = 2 * Math.PI * 26;
+
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
+      <circle cx="32" cy="32" r="26" fill="none" stroke={COLORS.darkBlue} strokeOpacity={0.15} strokeWidth={9} />
+      <circle
+        cx="32"
+        cy="32"
+        r="26"
+        fill="none"
+        stroke={COLORS.orange}
+        strokeWidth={9}
+        strokeLinecap="round"
+        strokeDasharray={circ}
+        strokeDashoffset={circ * (1 - p)}
+        transform="rotate(-90 32 32)"
+      />
+    </svg>
+  );
+};

@@ -7,6 +7,9 @@ import { Hook } from "./scenes/Hook";
 import { Intro } from "./scenes/Intro";
 import { Pace } from "./scenes/Pace";
 import { Problem } from "./scenes/Problem";
+import { Director } from "./scenes/Director";
+import { Connect } from "./scenes/Connect";
+import { Monthly } from "./scenes/Monthly";
 
 export const Reel: React.FC = () => {
   // Block rendering until Poppins 600/700 is loaded.
@@ -29,7 +32,10 @@ export const Reel: React.FC = () => {
       <Intro />
       <Pace />
       <Problem />
-      {/* Next scenes go here (director, connect, monthly, clients, goal, support, closing) */}
+      <Director />
+      <Connect />
+      <Monthly />
+      {/* Next scenes go here (clients, goal, support, closing) */}
 
       {/* Captions are always on top of the overlays */}
       <Captions />

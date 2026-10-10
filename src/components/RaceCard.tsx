@@ -6,7 +6,7 @@ import { Card } from "./Card";
 
 type RowProps = { label: string; color: string; progress: number };
 
-const Row: React.FC<RowProps> = ({ label, color, progress }) => (
+export const Row: React.FC<RowProps> = ({ label, color, progress }) => (
   <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
     <span style={{ width: 350, fontSize: 36, flexShrink: 0 }}>{label}</span>
     <div

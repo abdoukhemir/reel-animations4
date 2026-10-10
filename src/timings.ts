@@ -83,6 +83,7 @@ export const TRIGGERS: Trigger[] = [
   { id: "director-developpeur", word: "developpeur", after: 26.8 },
   { id: "director-expertise", word: "expertise", after: 28.7 },
   { id: "director-cout", word: "cout", after: 30.8 },
+  { id: "director-inferieur", word: "inferieur", after: 31.2 },
   { id: "director-recrutement", word: "recrutement", after: 31.9 },
   // Connect: software, ERP, fixed monthly fee
   { id: "connect-connectons", word: "connectons", after: 32.8 },

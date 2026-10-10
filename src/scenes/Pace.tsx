@@ -15,9 +15,11 @@ export const Pace: React.FC = () => {
   const usages = cueFrame("pace-usages");
   const minute = cueFrame("pace-minute");
   const jour = cueFrame("pace-jour");
-  const decrocher = cueFrame("pace-decrocher");
-  // Gone before "Le problème" starts.
-  const exit = cueFrame("problem-probleme") - secToFrame(0.45);
+  // "Ne pas décrocher" appears while "comment ne pas" is spoken (before the keyword),
+  // and stays until just before "Le problème" (short fade so the two never overlap).
+  const decrocher = cueFrame("pace-decrocher") - secToFrame(0.2);
+  const exit = cueFrame("problem-probleme") - secToFrame(0.17);
+  const EXIT_FADE = 0.15;
 
   return (
     <>
@@ -58,6 +60,7 @@ export const Pace: React.FC = () => {
           <CheckItem
             enterFrame={withOffset(decrocher)}
             exitFrame={withOffset(exit)}
+            exitDuration={EXIT_FADE}
             label="Ne pas décrocher"
           />
         </Slot>
