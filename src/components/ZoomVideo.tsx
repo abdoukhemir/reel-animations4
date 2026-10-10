@@ -23,7 +23,7 @@ const VIDEO_LAST_FRAME = DURATION_FRAMES - 2;
 const ORIGIN = "50% 34%";
 
 /** Slow push-in over the whole reel (1 = none). */
-const DRIFT_END = 1.06;
+const DRIFT_END = 1.04;
 
 /** Punch-in timing (frames). */
 const UP = 7;
@@ -34,21 +34,14 @@ type Punch = { id: string; to: number };
 
 /** Quick zoom on a trigger word: scale jumps to `to`, holds, then eases back. */
 export const PUNCHES: Punch[] = [
-  { id: "hook-essentiel", to: 1.14 },
-  { id: "hook-vite", to: 1.2 },
-  { id: "intro-elvira", to: 1.1 },
-  { id: "pace-minute", to: 1.14 },
-  { id: "problem-vitesse", to: 1.18 },
-  { id: "director-directeur", to: 1.2 },
-  { id: "director-developpeur", to: 1.14 },
-  { id: "director-cout", to: 1.16 },
-  { id: "connect-erp", to: 1.14 },
-  { id: "connect-mensualite", to: 1.16 },
-  { id: "clients-clients", to: 1.1 },
-  { id: "goal-gagner", to: 1.14 },
-  { id: "support-decisif", to: 1.2 },
-  { id: "closing-deux", to: 1.18 },
-  { id: "closing-izaia", to: 1.2 },
+  { id: "hook-vite", to: 1.14 },
+  { id: "problem-vitesse", to: 1.12 },
+  { id: "director-directeur", to: 1.14 },
+  { id: "director-cout", to: 1.1 },
+  { id: "connect-mensualite", to: 1.12 },
+  { id: "goal-gagner", to: 1.1 },
+  { id: "support-decisif", to: 1.12 },
+  { id: "closing-izaia", to: 1.14 },
 ];
 
 const envelope = (frame: number, start: number): number => {
