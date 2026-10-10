@@ -5,8 +5,7 @@ const strip = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerC
 
 words.forEach((w, i) => {
   let t = w.word;
-  if (/isaya\.fr/i.test(t)) t = t.replace(/isaya\.fr/i, 'izaia.fr');
-  else if (/isaya/i.test(t)) t = t.replace(/isaya/i, 'IZAIA');
+  t = t.replace(/(isaya|izaya|isaia)/i, 'IZAIA');
   if (/^pressions/i.test(t)) t = t.replace(/^pressions/i, 'relances');
   if (/^promptes/i.test(t)) t = t.replace(/^promptes/i, 'prompts');
   if (strip(t).startsWith('rgpd') && i > 0) {

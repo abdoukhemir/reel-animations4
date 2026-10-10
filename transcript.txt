@@ -1,11 +1,19 @@
-[00:00.1] Combien de temps est-ce que vos collaborateurs perdent chaque semaine sur les baux, les e-mails, les sinistres, les devis, les assemblées générales, les recrutements, relances copropriétaires ?
-[00:09.7] Bonjour, moi c'est Elvira de chez IZAIA, en une minute je vous montre comment on récupère ce temps là.
-[00:14.7] Vous voulez des résultats tout de suite ?
-[00:16.2] Notre formation d'une journée permet de répondre aux e-mails en quelques minutes, de préparer un bail, une convocation d'assemblée générale, de relancer les prestataires, de suivre les travaux et surtout d'utiliser l'intelligence artificielle en toute sécurité, dans le respect du RGPD.
-[00:32.2] Et si vous voulez aller encore plus loin, il y a notre formation de deux jours consécutifs ou espacés, programme complet.
-[00:38.7] Vos équipes apprennent à rédiger des procès verbaux d'assemblée, à comparer automatiquement plusieurs devis, à créer leur propre modèle d'e-mail et de documents.
-[00:46.2] Elles repartent avec une bibliothèque de prompts et des outils immédiatement opérationnels pour gagner du temps tous les jours.
-[00:52.4] Une formation, c'est déjà un excellent début, mais l'intelligence artificielle, elle évolue en permanence.
-[00:57.5] Alors chez IZAIA, nous pouvons devenir votre responsable IA externalisé.
-[01:01.7] Nous vous accompagnons dans la durée, nous faisons évoluer vos outils et vos équipes pour que votre structure garde toujours une longueur d'avance.
-[01:08.6] Contactez IZAIA sur izaia.fr
+[00:00.1] Une formation, c'est essentiel, mais soyons honnêtes, l'IA, elle évolue plus vite que votre entreprise.
+[00:05.2] Bonjour, moi c'est Elvira de chez IZAIA.
+[00:08.0] Nouveaux outils, de nouveaux usages qui apparaissent.
+[00:10.9] Je vous montre en une minute comment l'IA évolue.
+[00:13.8] Comment rester à jour, comment ne pas décrocher.
+[00:16.2] Le problème, c'est pas vos équipes, c'est la vitesse à laquelle évolue l'intelligence artificielle.
+[00:20.9] C'est pour ça qu'on a créé le directeur IA externalisé.
+[00:24.1] Concrètement, on devient votre ingénieur IA et développeur maison.
+[00:27.9] Avec un vrai niveau d'expertise, d'ingénierie, mais pour un coût bien inférieur à un recrutement.
+[00:32.6] Nous connectons l'intelligence artificielle à vos logiciels métiers, à votre ERP.
+[00:37.1] Une mensualité fixe, simple.
+[00:39.0] Et chaque mois, nous faisons évoluer vos outils au rythme de votre entreprise.
+[00:42.8] C'est déjà ce que nous mettons en place chez nos clients.
+[00:44.8] Agents, loops, automatisation des emails, assistants métiers, standards intelligents, bases de connaissances et tableaux de bord.
+[00:51.8] Toujours avec le même objectif.
+[00:53.9] Faire gagner du temps à vos équipes et rester au top de l'IA.
+[00:57.0] Mais les accompagner dans la durée, ça, c'est décisif.
+[00:59.8] Et chez IZAIA, nous, on fait les deux.
+[01:02.4] À très bientôt chez IZAIA !

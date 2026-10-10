@@ -1,1047 +1,952 @@
 [
   {
-    "word": "Combien",
-    "start": 0.1,
-    "end": 0.31
-  },
-  {
-    "word": "de",
-    "start": 0.31,
-    "end": 0.47
-  },
-  {
-    "word": "temps",
-    "start": 0.47,
-    "end": 0.62
-  },
-  {
-    "word": "est-ce",
-    "start": 0.62,
-    "end": 0.89
-  },
-  {
-    "word": "que",
-    "start": 0.89,
-    "end": 1.08
-  },
-  {
-    "word": "vos",
-    "start": 1.08,
-    "end": 1.15
-  },
-  {
-    "word": "collaborateurs",
-    "start": 1.15,
-    "end": 1.91
-  },
-  {
-    "word": "perdent",
-    "start": 1.91,
-    "end": 2.12
-  },
-  {
-    "word": "chaque",
-    "start": 2.12,
-    "end": 2.56
-  },
-  {
-    "word": "semaine",
-    "start": 2.56,
-    "end": 3.15
-  },
-  {
-    "word": "sur",
-    "start": 3.15,
-    "end": 3.36
-  },
-  {
-    "word": "les",
-    "start": 3.36,
-    "end": 3.6
-  },
-  {
-    "word": "baux,",
-    "start": 3.6,
-    "end": 4.07
-  },
-  {
-    "word": "les",
-    "start": 4.07,
-    "end": 4.16
-  },
-  {
-    "word": "e-mails,",
-    "start": 4.16,
-    "end": 4.86
-  },
-  {
-    "word": "les",
-    "start": 4.86,
-    "end": 5.09
-  },
-  {
-    "word": "sinistres,",
-    "start": 5.09,
-    "end": 5.66
-  },
-  {
-    "word": "les",
-    "start": 5.66,
-    "end": 5.82
-  },
-  {
-    "word": "devis,",
-    "start": 5.82,
-    "end": 6.32
-  },
-  {
-    "word": "les",
-    "start": 6.32,
-    "end": 6.35
-  },
-  {
-    "word": "assemblées",
-    "start": 6.35,
-    "end": 6.91
-  },
-  {
-    "word": "générales,",
-    "start": 6.91,
-    "end": 7.54
-  },
-  {
-    "word": "les",
-    "start": 7.54,
-    "end": 7.69
-  },
-  {
-    "word": "recrutements,",
-    "start": 7.69,
-    "end": 8.41
-  },
-  {
-    "word": "relances",
-    "start": 8.41,
-    "end": 8.89
-  },
-  {
-    "word": "copropriétaires",
-    "start": 8.89,
-    "end": 9.7
-  },
-  {
-    "word": "?",
-    "start": 9.7,
-    "end": 9.7
-  },
-  {
-    "word": "Bonjour,",
-    "start": 9.7,
-    "end": 10.33
-  },
-  {
-    "word": "moi",
-    "start": 10.33,
-    "end": 10.45
-  },
-  {
-    "word": "c'est",
-    "start": 10.45,
-    "end": 10.76
-  },
-  {
-    "word": "Elvira",
-    "start": 10.76,
-    "end": 11.12
-  },
-  {
-    "word": "de",
-    "start": 11.12,
-    "end": 11.25
-  },
-  {
-    "word": "chez",
-    "start": 11.25,
-    "end": 11.54
-  },
-  {
-    "word": "IZAIA,",
-    "start": 11.54,
-    "end": 11.99
-  },
-  {
-    "word": "en",
-    "start": 11.99,
-    "end": 12
-  },
-  {
-    "word": "une",
-    "start": 12,
-    "end": 12.16
-  },
-  {
-    "word": "minute",
-    "start": 12.16,
-    "end": 12.48
-  },
-  {
-    "word": "je",
-    "start": 12.48,
-    "end": 12.68
-  },
-  {
-    "word": "vous",
-    "start": 12.68,
-    "end": 12.8
-  },
-  {
-    "word": "montre",
-    "start": 12.8,
-    "end": 13.11
-  },
-  {
-    "word": "comment",
-    "start": 13.11,
-    "end": 13.48
-  },
-  {
-    "word": "on",
-    "start": 13.48,
-    "end": 13.58
-  },
-  {
-    "word": "récupère",
-    "start": 13.58,
-    "end": 14.11
-  },
-  {
-    "word": "ce",
-    "start": 14.11,
-    "end": 14.21
-  },
-  {
-    "word": "temps",
-    "start": 14.21,
-    "end": 14.47
-  },
-  {
-    "word": "là.",
-    "start": 14.47,
-    "end": 14.7
-  },
-  {
-    "word": "Vous",
-    "start": 14.7,
-    "end": 14.86
-  },
-  {
-    "word": "voulez",
-    "start": 14.86,
-    "end": 15.1
-  },
-  {
-    "word": "des",
-    "start": 15.1,
-    "end": 15.22
-  },
-  {
-    "word": "résultats",
-    "start": 15.22,
-    "end": 15.64
-  },
-  {
-    "word": "tout",
-    "start": 15.64,
-    "end": 15.78
-  },
-  {
-    "word": "de",
-    "start": 15.78,
-    "end": 15.86
-  },
-  {
-    "word": "suite",
-    "start": 15.86,
-    "end": 16.04
-  },
-  {
-    "word": "?",
-    "start": 16.04,
-    "end": 16.2
-  },
-  {
-    "word": "Notre",
-    "start": 16.2,
-    "end": 16.53
-  },
-  {
-    "word": "formation",
-    "start": 16.53,
-    "end": 17.04
-  },
-  {
-    "word": "d'une",
-    "start": 17.04,
-    "end": 17.29
-  },
-  {
-    "word": "journée",
-    "start": 17.29,
-    "end": 17.88
-  },
-  {
-    "word": "permet",
-    "start": 17.88,
-    "end": 18.11
-  },
-  {
-    "word": "de",
-    "start": 18.11,
-    "end": 18.22
-  },
-  {
-    "word": "répondre",
-    "start": 18.22,
-    "end": 18.77
-  },
-  {
-    "word": "aux",
-    "start": 18.77,
-    "end": 18.93
-  },
-  {
-    "word": "e-mails",
-    "start": 18.93,
-    "end": 19.3
-  },
-  {
-    "word": "en",
-    "start": 19.3,
-    "end": 19.43
-  },
-  {
-    "word": "quelques",
-    "start": 19.43,
-    "end": 19.88
-  },
-  {
-    "word": "minutes,",
-    "start": 19.88,
-    "end": 20.51
-  },
-  {
-    "word": "de",
-    "start": 20.51,
-    "end": 20.6
-  },
-  {
-    "word": "préparer",
-    "start": 20.6,
-    "end": 21.06
-  },
-  {
-    "word": "un",
-    "start": 21.06,
-    "end": 21.16
-  },
-  {
-    "word": "bail,",
-    "start": 21.16,
-    "end": 21.58
-  },
-  {
-    "word": "une",
-    "start": 21.58,
-    "end": 21.65
-  },
-  {
-    "word": "convocation",
-    "start": 21.65,
-    "end": 22.19
-  },
-  {
-    "word": "d'assemblée",
-    "start": 22.19,
-    "end": 22.75
-  },
-  {
-    "word": "générale,",
-    "start": 22.75,
-    "end": 23.3
-  },
-  {
-    "word": "de",
-    "start": 23.39,
-    "end": 23.43
-  },
-  {
-    "word": "relancer",
-    "start": 23.43,
-    "end": 23.94
-  },
-  {
-    "word": "les",
-    "start": 23.94,
-    "end": 24.12
-  },
-  {
-    "word": "prestataires,",
-    "start": 24.12,
-    "end": 25.03
-  },
-  {
-    "word": "de",
-    "start": 25.03,
-    "end": 25.18
-  },
-  {
-    "word": "suivre",
-    "start": 25.18,
-    "end": 25.57
-  },
-  {
-    "word": "les",
-    "start": 25.57,
-    "end": 25.73
-  },
-  {
-    "word": "travaux",
-    "start": 25.73,
-    "end": 26.32
-  },
-  {
-    "word": "et",
-    "start": 26.32,
-    "end": 26.38
-  },
-  {
-    "word": "surtout",
-    "start": 26.38,
-    "end": 26.77
-  },
-  {
-    "word": "d'utiliser",
-    "start": 26.77,
-    "end": 27.41
-  },
-  {
-    "word": "l'intelligence",
-    "start": 27.41,
-    "end": 28.31
-  },
-  {
-    "word": "artificielle",
-    "start": 28.31,
-    "end": 29.08
-  },
-  {
-    "word": "en",
-    "start": 29.08,
-    "end": 29.21
-  },
-  {
-    "word": "toute",
-    "start": 29.21,
-    "end": 29.53
-  },
-  {
-    "word": "sécurité,",
-    "start": 29.53,
-    "end": 30.55
-  },
-  {
-    "word": "dans",
-    "start": 30.55,
-    "end": 30.84
-  },
-  {
-    "word": "le",
-    "start": 30.84,
-    "end": 31.13
-  },
-  {
-    "word": "respect",
-    "start": 31.13,
-    "end": 31.6
-  },
-  {
-    "word": "du",
-    "start": 31.6,
-    "end": 31.86
-  },
-  {
-    "word": "RGPD.",
-    "start": 31.86,
-    "end": 32.2
-  },
-  {
-    "word": "Et",
-    "start": 32.2,
-    "end": 32.34
-  },
-  {
-    "word": "si",
-    "start": 32.34,
-    "end": 32.44
-  },
-  {
-    "word": "vous",
-    "start": 32.44,
-    "end": 32.68
-  },
-  {
-    "word": "voulez",
-    "start": 32.68,
-    "end": 33.04
-  },
-  {
-    "word": "aller",
-    "start": 33.04,
-    "end": 33.4
-  },
-  {
-    "word": "encore",
-    "start": 33.4,
-    "end": 33.73
-  },
-  {
-    "word": "plus",
-    "start": 33.73,
-    "end": 33.94
-  },
-  {
-    "word": "loin,",
-    "start": 33.94,
-    "end": 34.3
-  },
-  {
-    "word": "il",
-    "start": 34.3,
-    "end": 34.42
-  },
-  {
-    "word": "y",
-    "start": 34.42,
-    "end": 34.48
-  },
-  {
-    "word": "a",
-    "start": 34.48,
-    "end": 34.54
-  },
-  {
-    "word": "notre",
-    "start": 34.54,
-    "end": 34.84
-  },
-  {
-    "word": "formation",
-    "start": 34.84,
-    "end": 35.39
-  },
-  {
-    "word": "de",
-    "start": 35.39,
-    "end": 35.51
-  },
-  {
-    "word": "deux",
-    "start": 35.51,
-    "end": 35.75
-  },
-  {
-    "word": "jours",
-    "start": 35.75,
-    "end": 36.05
-  },
-  {
-    "word": "consécutifs",
-    "start": 36.05,
-    "end": 36.87
-  },
-  {
-    "word": "ou",
-    "start": 36.87,
-    "end": 36.89
-  },
-  {
-    "word": "espacés,",
-    "start": 36.89,
-    "end": 37.84
-  },
-  {
-    "word": "programme",
-    "start": 37.84,
-    "end": 38.12
-  },
-  {
-    "word": "complet.",
-    "start": 38.12,
-    "end": 38.7
-  },
-  {
-    "word": "Vos",
-    "start": 38.7,
-    "end": 38.83
-  },
-  {
-    "word": "équipes",
-    "start": 38.83,
-    "end": 39.19
-  },
-  {
-    "word": "apprennent",
-    "start": 39.19,
-    "end": 39.63
-  },
-  {
-    "word": "à",
-    "start": 39.63,
-    "end": 39.72
-  },
-  {
-    "word": "rédiger",
-    "start": 39.72,
-    "end": 40.07
-  },
-  {
-    "word": "des",
-    "start": 40.07,
-    "end": 40.2
-  },
-  {
-    "word": "procès",
-    "start": 40.2,
-    "end": 40.51
-  },
-  {
-    "word": "verbaux",
-    "start": 40.51,
-    "end": 40.82
-  },
-  {
-    "word": "d'assemblée,",
-    "start": 40.82,
-    "end": 41.59
-  },
-  {
-    "word": "à",
-    "start": 41.59,
-    "end": 41.62
-  },
-  {
-    "word": "comparer",
-    "start": 41.62,
-    "end": 41.97
-  },
-  {
-    "word": "automatiquement",
-    "start": 41.97,
-    "end": 42.69
-  },
-  {
-    "word": "plusieurs",
-    "start": 42.69,
-    "end": 43.12
-  },
-  {
-    "word": "devis,",
-    "start": 43.12,
-    "end": 43.49
-  },
-  {
-    "word": "à",
-    "start": 43.49,
-    "end": 43.64
-  },
-  {
-    "word": "créer",
-    "start": 43.64,
-    "end": 43.94
-  },
-  {
-    "word": "leur",
-    "start": 43.94,
-    "end": 44.21
-  },
-  {
-    "word": "propre",
-    "start": 44.21,
-    "end": 44.49
-  },
-  {
-    "word": "modèle",
-    "start": 44.49,
-    "end": 44.87
-  },
-  {
-    "word": "d'e-mail",
-    "start": 44.87,
-    "end": 45.29
-  },
-  {
-    "word": "et",
-    "start": 45.29,
-    "end": 45.48
-  },
-  {
-    "word": "de",
-    "start": 45.48,
-    "end": 45.51
-  },
-  {
-    "word": "documents.",
-    "start": 45.51,
-    "end": 46.2
-  },
-  {
-    "word": "Elles",
-    "start": 46.2,
-    "end": 46.46
-  },
-  {
-    "word": "repartent",
-    "start": 46.46,
-    "end": 46.89
-  },
-  {
-    "word": "avec",
-    "start": 46.89,
-    "end": 47.11
-  },
-  {
-    "word": "une",
-    "start": 47.11,
-    "end": 47.25
-  },
-  {
-    "word": "bibliothèque",
-    "start": 47.25,
-    "end": 47.91
-  },
-  {
-    "word": "de",
-    "start": 47.91,
-    "end": 48.01
-  },
-  {
-    "word": "prompts",
-    "start": 48.01,
-    "end": 48.42
-  },
-  {
-    "word": "et",
-    "start": 48.42,
-    "end": 48.52
-  },
-  {
-    "word": "des",
-    "start": 48.52,
-    "end": 48.67
-  },
-  {
-    "word": "outils",
-    "start": 48.67,
-    "end": 49.02
-  },
-  {
-    "word": "immédiatement",
-    "start": 49.02,
-    "end": 49.68
-  },
-  {
-    "word": "opérationnels",
-    "start": 49.68,
-    "end": 50.52
-  },
-  {
-    "word": "pour",
-    "start": 50.52,
-    "end": 50.59
-  },
-  {
-    "word": "gagner",
-    "start": 50.59,
-    "end": 50.9
-  },
-  {
-    "word": "du",
-    "start": 50.9,
-    "end": 51
-  },
-  {
-    "word": "temps",
-    "start": 51,
-    "end": 51.26
-  },
-  {
-    "word": "tous",
-    "start": 51.26,
-    "end": 51.6
-  },
-  {
-    "word": "les",
-    "start": 51.6,
-    "end": 51.61
-  },
-  {
-    "word": "jours.",
-    "start": 51.61,
-    "end": 52.2
-  },
-  {
     "word": "Une",
-    "start": 52.35,
-    "end": 52.36
+    "start": 0.13,
+    "end": 0.17
   },
   {
     "word": "formation,",
-    "start": 52.36,
-    "end": 52.91
+    "start": 0.17,
+    "end": 0.79
   },
   {
     "word": "c'est",
-    "start": 52.91,
-    "end": 53.19
+    "start": 0.79,
+    "end": 1.07
   },
   {
-    "word": "déjà",
-    "start": 53.19,
-    "end": 53.47
-  },
-  {
-    "word": "un",
-    "start": 53.47,
-    "end": 53.57
-  },
-  {
-    "word": "excellent",
-    "start": 53.57,
-    "end": 54.03
-  },
-  {
-    "word": "début,",
-    "start": 54.03,
-    "end": 54.58
+    "word": "essentiel,",
+    "start": 1.07,
+    "end": 1.7
   },
   {
     "word": "mais",
-    "start": 54.58,
-    "end": 54.64
+    "start": 1.7,
+    "end": 1.9
   },
   {
-    "word": "l'intelligence",
-    "start": 54.64,
-    "end": 55.36
+    "word": "soyons",
+    "start": 1.9,
+    "end": 2.2
   },
   {
-    "word": "artificielle,",
-    "start": 55.36,
-    "end": 56.1
+    "word": "honnêtes,",
+    "start": 2.2,
+    "end": 2.8
+  },
+  {
+    "word": "l'IA,",
+    "start": 2.8,
+    "end": 3.24
   },
   {
     "word": "elle",
-    "start": 56.1,
-    "end": 56.27
+    "start": 3.24,
+    "end": 3.42
   },
   {
     "word": "évolue",
-    "start": 56.27,
-    "end": 56.68
+    "start": 3.42,
+    "end": 3.76
   },
   {
-    "word": "en",
-    "start": 56.68,
-    "end": 56.72
+    "word": "plus",
+    "start": 3.76,
+    "end": 3.92
   },
   {
-    "word": "permanence.",
-    "start": 56.72,
-    "end": 57.5
-  },
-  {
-    "word": "Alors",
-    "start": 57.5,
-    "end": 57.81
-  },
-  {
-    "word": "chez",
-    "start": 57.81,
-    "end": 58.06
-  },
-  {
-    "word": "IZAIA,",
-    "start": 58.06,
-    "end": 58.48
-  },
-  {
-    "word": "nous",
-    "start": 58.48,
-    "end": 58.73
-  },
-  {
-    "word": "pouvons",
-    "start": 58.73,
-    "end": 59.16
-  },
-  {
-    "word": "devenir",
-    "start": 59.16,
-    "end": 59.58
-  },
-  {
-    "word": "votre",
-    "start": 59.58,
-    "end": 59.97
-  },
-  {
-    "word": "responsable",
-    "start": 59.97,
-    "end": 60.58
-  },
-  {
-    "word": "IA",
-    "start": 60.58,
-    "end": 60.7
-  },
-  {
-    "word": "externalisé.",
-    "start": 60.7,
-    "end": 61.7
-  },
-  {
-    "word": "Nous",
-    "start": 61.7,
-    "end": 61.9
-  },
-  {
-    "word": "vous",
-    "start": 61.9,
-    "end": 62.1
-  },
-  {
-    "word": "accompagnons",
-    "start": 62.1,
-    "end": 62.7
-  },
-  {
-    "word": "dans",
-    "start": 62.7,
-    "end": 62.9
-  },
-  {
-    "word": "la",
-    "start": 62.9,
-    "end": 63
-  },
-  {
-    "word": "durée,",
-    "start": 63,
-    "end": 63.41
-  },
-  {
-    "word": "nous",
-    "start": 63.41,
-    "end": 63.6
-  },
-  {
-    "word": "faisons",
-    "start": 63.6,
-    "end": 63.95
-  },
-  {
-    "word": "évoluer",
-    "start": 63.95,
-    "end": 64.35
-  },
-  {
-    "word": "vos",
-    "start": 64.35,
-    "end": 64.55
-  },
-  {
-    "word": "outils",
-    "start": 64.55,
-    "end": 64.9
-  },
-  {
-    "word": "et",
-    "start": 64.9,
-    "end": 64.9
-  },
-  {
-    "word": "vos",
-    "start": 64.9,
-    "end": 65.05
-  },
-  {
-    "word": "équipes",
-    "start": 65.05,
-    "end": 65.57
-  },
-  {
-    "word": "pour",
-    "start": 65.57,
-    "end": 65.73
+    "word": "vite",
+    "start": 3.92,
+    "end": 4.28
   },
   {
     "word": "que",
-    "start": 65.73,
-    "end": 65.89
+    "start": 4.28,
+    "end": 4.32
   },
   {
     "word": "votre",
-    "start": 65.89,
-    "end": 66.17
+    "start": 4.32,
+    "end": 4.56
   },
   {
-    "word": "structure",
-    "start": 66.17,
-    "end": 66.64
+    "word": "entreprise.",
+    "start": 4.56,
+    "end": 5.22
   },
   {
-    "word": "garde",
-    "start": 66.64,
-    "end": 66.91
+    "word": "Bonjour,",
+    "start": 5.22,
+    "end": 5.92
   },
   {
-    "word": "toujours",
-    "start": 66.91,
-    "end": 67.36
+    "word": "moi",
+    "start": 5.92,
+    "end": 6.14
+  },
+  {
+    "word": "c'est",
+    "start": 6.14,
+    "end": 6.57
+  },
+  {
+    "word": "Elvira",
+    "start": 6.57,
+    "end": 6.98
+  },
+  {
+    "word": "de",
+    "start": 6.98,
+    "end": 7.13
+  },
+  {
+    "word": "chez",
+    "start": 7.13,
+    "end": 7.45
+  },
+  {
+    "word": "IZAIA.",
+    "start": 7.45,
+    "end": 8.02
+  },
+  {
+    "word": "Nouveaux",
+    "start": 8.02,
+    "end": 8.49
+  },
+  {
+    "word": "outils,",
+    "start": 8.49,
+    "end": 9.02
+  },
+  {
+    "word": "de",
+    "start": 9.02,
+    "end": 9.1
+  },
+  {
+    "word": "nouveaux",
+    "start": 9.1,
+    "end": 9.58
+  },
+  {
+    "word": "usages",
+    "start": 9.58,
+    "end": 10.06
+  },
+  {
+    "word": "qui",
+    "start": 10.06,
+    "end": 10.12
+  },
+  {
+    "word": "apparaissent.",
+    "start": 10.12,
+    "end": 10.9
+  },
+  {
+    "word": "Je",
+    "start": 10.9,
+    "end": 11.18
+  },
+  {
+    "word": "vous",
+    "start": 11.18,
+    "end": 11.29
+  },
+  {
+    "word": "montre",
+    "start": 11.29,
+    "end": 11.68
+  },
+  {
+    "word": "en",
+    "start": 11.68,
+    "end": 11.82
   },
   {
     "word": "une",
-    "start": 67.36,
-    "end": 67.51
+    "start": 11.82,
+    "end": 12
   },
   {
-    "word": "longueur",
-    "start": 67.51,
-    "end": 67.95
+    "word": "minute",
+    "start": 12,
+    "end": 12.39
   },
   {
-    "word": "d'avance.",
-    "start": 67.95,
-    "end": 68.6
+    "word": "comment",
+    "start": 12.39,
+    "end": 12.85
   },
   {
-    "word": "Contactez",
-    "start": 68.6,
-    "end": 69.92
+    "word": "l'IA",
+    "start": 12.85,
+    "end": 13.1
+  },
+  {
+    "word": "évolue.",
+    "start": 13.1,
+    "end": 13.8
+  },
+  {
+    "word": "Comment",
+    "start": 13.8,
+    "end": 14.16
+  },
+  {
+    "word": "rester",
+    "start": 14.16,
+    "end": 14.47
+  },
+  {
+    "word": "à",
+    "start": 14.47,
+    "end": 14.57
+  },
+  {
+    "word": "jour,",
+    "start": 14.57,
+    "end": 14.96
+  },
+  {
+    "word": "comment",
+    "start": 14.96,
+    "end": 15.24
+  },
+  {
+    "word": "ne",
+    "start": 15.24,
+    "end": 15.44
+  },
+  {
+    "word": "pas",
+    "start": 15.44,
+    "end": 15.49
+  },
+  {
+    "word": "décrocher.",
+    "start": 15.49,
+    "end": 16.22
+  },
+  {
+    "word": "Le",
+    "start": 16.22,
+    "end": 16.33
+  },
+  {
+    "word": "problème,",
+    "start": 16.33,
+    "end": 16.83
+  },
+  {
+    "word": "c'est",
+    "start": 16.83,
+    "end": 17.05
+  },
+  {
+    "word": "pas",
+    "start": 17.05,
+    "end": 17.19
+  },
+  {
+    "word": "vos",
+    "start": 17.19,
+    "end": 17.33
+  },
+  {
+    "word": "équipes,",
+    "start": 17.33,
+    "end": 17.91
+  },
+  {
+    "word": "c'est",
+    "start": 17.91,
+    "end": 18.11
+  },
+  {
+    "word": "la",
+    "start": 18.11,
+    "end": 18.2
+  },
+  {
+    "word": "vitesse",
+    "start": 18.2,
+    "end": 18.56
+  },
+  {
+    "word": "à",
+    "start": 18.56,
+    "end": 18.67
+  },
+  {
+    "word": "laquelle",
+    "start": 18.67,
+    "end": 19.12
+  },
+  {
+    "word": "évolue",
+    "start": 19.12,
+    "end": 19.42
+  },
+  {
+    "word": "l'intelligence",
+    "start": 19.42,
+    "end": 20.12
+  },
+  {
+    "word": "artificielle.",
+    "start": 20.12,
+    "end": 20.94
+  },
+  {
+    "word": "C'est",
+    "start": 20.94,
+    "end": 21.24
+  },
+  {
+    "word": "pour",
+    "start": 21.24,
+    "end": 21.48
+  },
+  {
+    "word": "ça",
+    "start": 21.48,
+    "end": 21.66
+  },
+  {
+    "word": "qu'on",
+    "start": 21.66,
+    "end": 21.96
+  },
+  {
+    "word": "a",
+    "start": 21.96,
+    "end": 22.02
+  },
+  {
+    "word": "créé",
+    "start": 22.02,
+    "end": 22.38
+  },
+  {
+    "word": "le",
+    "start": 22.38,
+    "end": 22.53
+  },
+  {
+    "word": "directeur",
+    "start": 22.53,
+    "end": 23.04
+  },
+  {
+    "word": "IA",
+    "start": 23.04,
+    "end": 23.2
+  },
+  {
+    "word": "externalisé.",
+    "start": 23.2,
+    "end": 24.1
+  },
+  {
+    "word": "Concrètement,",
+    "start": 24.1,
+    "end": 25.01
+  },
+  {
+    "word": "on",
+    "start": 25.01,
+    "end": 25.13
+  },
+  {
+    "word": "devient",
+    "start": 25.13,
+    "end": 25.57
+  },
+  {
+    "word": "votre",
+    "start": 25.57,
+    "end": 25.86
+  },
+  {
+    "word": "ingénieur",
+    "start": 25.86,
+    "end": 26.46
+  },
+  {
+    "word": "IA",
+    "start": 26.46,
+    "end": 26.74
+  },
+  {
+    "word": "et",
+    "start": 26.74,
+    "end": 26.81
+  },
+  {
+    "word": "développeur",
+    "start": 26.81,
+    "end": 27.34
+  },
+  {
+    "word": "maison.",
+    "start": 27.34,
+    "end": 27.8
+  },
+  {
+    "word": "Avec",
+    "start": 27.9,
+    "end": 28.03
+  },
+  {
+    "word": "un",
+    "start": 28.03,
+    "end": 28.14
+  },
+  {
+    "word": "vrai",
+    "start": 28.14,
+    "end": 28.37
+  },
+  {
+    "word": "niveau",
+    "start": 28.37,
+    "end": 28.72
+  },
+  {
+    "word": "d'expertise,",
+    "start": 28.72,
+    "end": 29.45
+  },
+  {
+    "word": "d'ingénierie,",
+    "start": 29.45,
+    "end": 30.33
+  },
+  {
+    "word": "mais",
+    "start": 30.33,
+    "end": 30.52
+  },
+  {
+    "word": "pour",
+    "start": 30.52,
+    "end": 30.71
+  },
+  {
+    "word": "un",
+    "start": 30.71,
+    "end": 30.83
+  },
+  {
+    "word": "coût",
+    "start": 30.83,
+    "end": 31.03
+  },
+  {
+    "word": "bien",
+    "start": 31.03,
+    "end": 31.22
+  },
+  {
+    "word": "inférieur",
+    "start": 31.22,
+    "end": 31.73
+  },
+  {
+    "word": "à",
+    "start": 31.73,
+    "end": 31.82
+  },
+  {
+    "word": "un",
+    "start": 31.82,
+    "end": 31.88
+  },
+  {
+    "word": "recrutement.",
+    "start": 31.88,
+    "end": 32.56
+  },
+  {
+    "word": "Nous",
+    "start": 32.56,
+    "end": 32.83
+  },
+  {
+    "word": "connectons",
+    "start": 32.83,
+    "end": 33.4
+  },
+  {
+    "word": "l'intelligence",
+    "start": 33.4,
+    "end": 34.24
+  },
+  {
+    "word": "artificielle",
+    "start": 34.24,
+    "end": 34.97
+  },
+  {
+    "word": "à",
+    "start": 34.97,
+    "end": 35.08
+  },
+  {
+    "word": "vos",
+    "start": 35.08,
+    "end": 35.26
+  },
+  {
+    "word": "logiciels",
+    "start": 35.26,
+    "end": 35.8
+  },
+  {
+    "word": "métiers,",
+    "start": 35.8,
+    "end": 36.4
+  },
+  {
+    "word": "à",
+    "start": 36.4,
+    "end": 36.52
+  },
+  {
+    "word": "votre",
+    "start": 36.52,
+    "end": 36.82
+  },
+  {
+    "word": "ERP.",
+    "start": 36.82,
+    "end": 37.1
+  },
+  {
+    "word": "Une",
+    "start": 37.1,
+    "end": 37.29
+  },
+  {
+    "word": "mensualité",
+    "start": 37.29,
+    "end": 38.04
+  },
+  {
+    "word": "fixe,",
+    "start": 38.04,
+    "end": 38.38
+  },
+  {
+    "word": "simple.",
+    "start": 38.38,
+    "end": 39
+  },
+  {
+    "word": "Et",
+    "start": 39,
+    "end": 39.1
+  },
+  {
+    "word": "chaque",
+    "start": 39.1,
+    "end": 39.42
+  },
+  {
+    "word": "mois,",
+    "start": 39.42,
+    "end": 39.73
+  },
+  {
+    "word": "nous",
+    "start": 39.73,
+    "end": 39.94
+  },
+  {
+    "word": "faisons",
+    "start": 39.94,
+    "end": 40.31
+  },
+  {
+    "word": "évoluer",
+    "start": 40.31,
+    "end": 40.73
+  },
+  {
+    "word": "vos",
+    "start": 40.73,
+    "end": 40.88
+  },
+  {
+    "word": "outils",
+    "start": 40.88,
+    "end": 41.21
+  },
+  {
+    "word": "au",
+    "start": 41.21,
+    "end": 41.31
+  },
+  {
+    "word": "rythme",
+    "start": 41.31,
+    "end": 41.61
+  },
+  {
+    "word": "de",
+    "start": 41.61,
+    "end": 41.71
+  },
+  {
+    "word": "votre",
+    "start": 41.71,
+    "end": 41.98
+  },
+  {
+    "word": "entreprise.",
+    "start": 41.98,
+    "end": 42.8
+  },
+  {
+    "word": "C'est",
+    "start": 42.8,
+    "end": 43
+  },
+  {
+    "word": "déjà",
+    "start": 43,
+    "end": 43.24
+  },
+  {
+    "word": "ce",
+    "start": 43.24,
+    "end": 43.37
+  },
+  {
+    "word": "que",
+    "start": 43.37,
+    "end": 43.44
+  },
+  {
+    "word": "nous",
+    "start": 43.44,
+    "end": 43.6
+  },
+  {
+    "word": "mettons",
+    "start": 43.6,
+    "end": 43.88
+  },
+  {
+    "word": "en",
+    "start": 43.88,
+    "end": 43.96
+  },
+  {
+    "word": "place",
+    "start": 43.96,
+    "end": 44.16
+  },
+  {
+    "word": "chez",
+    "start": 44.16,
+    "end": 44.31
+  },
+  {
+    "word": "nos",
+    "start": 44.31,
+    "end": 44.44
+  },
+  {
+    "word": "clients.",
+    "start": 44.44,
+    "end": 44.76
+  },
+  {
+    "word": "Agents,",
+    "start": 44.76,
+    "end": 45.45
+  },
+  {
+    "word": "loops,",
+    "start": 45.45,
+    "end": 45.79
+  },
+  {
+    "word": "automatisation",
+    "start": 45.79,
+    "end": 46.6
+  },
+  {
+    "word": "des",
+    "start": 46.6,
+    "end": 46.79
+  },
+  {
+    "word": "emails,",
+    "start": 46.79,
+    "end": 47.42
+  },
+  {
+    "word": "assistants",
+    "start": 47.42,
+    "end": 47.84
+  },
+  {
+    "word": "métiers,",
+    "start": 47.84,
+    "end": 48.34
+  },
+  {
+    "word": "standards",
+    "start": 48.34,
+    "end": 48.74
+  },
+  {
+    "word": "intelligents,",
+    "start": 48.74,
+    "end": 49.47
+  },
+  {
+    "word": "bases",
+    "start": 49.47,
+    "end": 49.72
+  },
+  {
+    "word": "de",
+    "start": 49.72,
+    "end": 49.82
+  },
+  {
+    "word": "connaissances",
+    "start": 49.82,
+    "end": 50.67
+  },
+  {
+    "word": "et",
+    "start": 50.67,
+    "end": 50.79
+  },
+  {
+    "word": "tableaux",
+    "start": 50.79,
+    "end": 51.31
+  },
+  {
+    "word": "de",
+    "start": 51.31,
+    "end": 51.45
+  },
+  {
+    "word": "bord.",
+    "start": 51.45,
+    "end": 51.76
+  },
+  {
+    "word": "Toujours",
+    "start": 51.76,
+    "end": 52.42
+  },
+  {
+    "word": "avec",
+    "start": 52.42,
+    "end": 52.6
+  },
+  {
+    "word": "le",
+    "start": 52.6,
+    "end": 52.74
+  },
+  {
+    "word": "même",
+    "start": 52.74,
+    "end": 53.09
+  },
+  {
+    "word": "objectif.",
+    "start": 53.09,
+    "end": 53.88
+  },
+  {
+    "word": "Faire",
+    "start": 53.88,
+    "end": 54.17
+  },
+  {
+    "word": "gagner",
+    "start": 54.17,
+    "end": 54.59
+  },
+  {
+    "word": "du",
+    "start": 54.59,
+    "end": 54.64
+  },
+  {
+    "word": "temps",
+    "start": 54.64,
+    "end": 54.92
+  },
+  {
+    "word": "à",
+    "start": 54.92,
+    "end": 55.05
+  },
+  {
+    "word": "vos",
+    "start": 55.05,
+    "end": 55.22
+  },
+  {
+    "word": "équipes",
+    "start": 55.22,
+    "end": 55.79
+  },
+  {
+    "word": "et",
+    "start": 55.79,
+    "end": 55.81
+  },
+  {
+    "word": "rester",
+    "start": 55.81,
+    "end": 56.16
+  },
+  {
+    "word": "au",
+    "start": 56.16,
+    "end": 56.27
+  },
+  {
+    "word": "top",
+    "start": 56.27,
+    "end": 56.46
+  },
+  {
+    "word": "de",
+    "start": 56.46,
+    "end": 56.57
+  },
+  {
+    "word": "l'IA.",
+    "start": 56.57,
+    "end": 56.88
+  },
+  {
+    "word": "Mais",
+    "start": 56.97,
+    "end": 57.07
+  },
+  {
+    "word": "les",
+    "start": 57.07,
+    "end": 57.21
+  },
+  {
+    "word": "accompagner",
+    "start": 57.21,
+    "end": 57.75
+  },
+  {
+    "word": "dans",
+    "start": 57.75,
+    "end": 57.93
+  },
+  {
+    "word": "la",
+    "start": 57.93,
+    "end": 58.02
+  },
+  {
+    "word": "durée,",
+    "start": 58.02,
+    "end": 58.52
+  },
+  {
+    "word": "ça,",
+    "start": 58.52,
+    "end": 58.81
+  },
+  {
+    "word": "c'est",
+    "start": 58.81,
+    "end": 59.08
+  },
+  {
+    "word": "décisif.",
+    "start": 59.08,
+    "end": 59.8
+  },
+  {
+    "word": "Et",
+    "start": 59.8,
+    "end": 59.96
+  },
+  {
+    "word": "chez",
+    "start": 59.96,
+    "end": 60.29
+  },
+  {
+    "word": "IZAIA,",
+    "start": 60.29,
+    "end": 60.99
+  },
+  {
+    "word": "nous,",
+    "start": 60.99,
+    "end": 61.41
+  },
+  {
+    "word": "on",
+    "start": 61.41,
+    "end": 61.54
+  },
+  {
+    "word": "fait",
+    "start": 61.54,
+    "end": 61.69
+  },
+  {
+    "word": "les",
+    "start": 61.69,
+    "end": 61.88
+  },
+  {
+    "word": "deux.",
+    "start": 61.88,
+    "end": 62.4
+  },
+  {
+    "word": "À",
+    "start": 62.4,
+    "end": 62.52
+  },
+  {
+    "word": "très",
+    "start": 62.52,
+    "end": 62.82
+  },
+  {
+    "word": "bientôt",
+    "start": 62.82,
+    "end": 63.31
+  },
+  {
+    "word": "chez",
+    "start": 63.31,
+    "end": 63.55
   },
   {
     "word": "IZAIA",
-    "start": 69.92,
-    "end": 70.67
+    "start": 63.55,
+    "end": 63.89
   },
   {
-    "word": "sur",
-    "start": 70.67,
-    "end": 71.09
-  },
-  {
-    "word": "izaia.fr",
-    "start": 71.09,
-    "end": 72.6
+    "word": "!",
+    "start": 63.89,
+    "end": 64.2
   }
 ]
