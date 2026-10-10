@@ -71,8 +71,11 @@ export const TRIGGERS: Trigger[] = [
   { id: "pace-outils", word: "outils", after: 8.5 },
   { id: "pace-usages", word: "usages", after: 9.6 },
   { id: "pace-minute", word: "minute", after: 12 },
+  { id: "pace-jour", word: "jour", after: 14.6 },
+  { id: "pace-decrocher", word: "decrocher", after: 15.5 },
   // Problem: "c'est la vitesse à laquelle évolue l'IA"
   { id: "problem-probleme", word: "probleme", after: 16.3 },
+  { id: "problem-equipes", word: "equipes", after: 17.3 },
   { id: "problem-vitesse", word: "vitesse", after: 18.2 },
   // Director: "le directeur IA externalisé"
   { id: "director-directeur", word: "directeur", after: 22.5 },

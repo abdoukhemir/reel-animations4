@@ -20,7 +20,7 @@ export const Chip: React.FC<ChipProps> = ({
   icon,
   children,
 }) => {
-  const { visible, opacity, scale } = usePopInOut(enterFrame, exitFrame, exitDuration);
+  const { visible, opacity, scale, y } = usePopInOut(enterFrame, exitFrame, exitDuration);
 
   if (!visible) {
     return null;
@@ -45,7 +45,7 @@ export const Chip: React.FC<ChipProps> = ({
         maxWidth: 960,
         boxSizing: "border-box",
         opacity,
-        transform: `scale(${scale})`,
+        transform: `translateY(${y}px) scale(${scale})`,
       }}
     >
       {icon ? (

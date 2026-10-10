@@ -1,5 +1,5 @@
 import React from "react";
-import { Easing, interpolate, useCurrentFrame } from "remotion";
+import { Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { COLORS } from "../theme";
 import { FPS } from "../timings";
 
@@ -100,3 +100,42 @@ export const BookIcon: React.FC<IconProps> = ({ size = 76 }) => (
     <path d="M43 6 V24 L47.5 20 L52 24 V6 Z" fill={COLORS.orange} />
   </svg>
 );
+
+/** Empty ring that fills with a green check at enterFrame. Takes its space from the start. */
+export const AnimatedCheck: React.FC<IconProps & { enterFrame: number }> = ({
+  size = 56,
+  enterFrame,
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const s = spring({
+    frame: frame - enterFrame,
+    fps,
+    config: { damping: 14, stiffness: 180, mass: 0.7 },
+  });
+
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
+      <circle
+        cx="32"
+        cy="32"
+        r="28"
+        fill="none"
+        stroke={COLORS.darkBlue}
+        strokeOpacity={0.25}
+        strokeWidth={5}
+      />
+      <g transform={`translate(32 32) scale(${s}) translate(-32 -32)`}>
+        <circle cx="32" cy="32" r="32" fill={COLORS.green} />
+        <path
+          d="M18 33 L28 43 L46 23"
+          fill="none"
+          stroke={COLORS.white}
+          strokeWidth={7}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </svg>
+  );
+};

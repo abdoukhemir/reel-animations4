@@ -17,7 +17,7 @@ export const Badge: React.FC<BadgeProps> = ({
   icon,
   children,
 }) => {
-  const { visible, opacity, scale } = usePopInOut(enterFrame, exitFrame, exitDuration);
+  const { visible, opacity, scale, y } = usePopInOut(enterFrame, exitFrame, exitDuration);
 
   if (!visible) {
     return null;
@@ -40,7 +40,7 @@ export const Badge: React.FC<BadgeProps> = ({
         boxShadow: SHADOW,
         whiteSpace: "nowrap",
         opacity,
-        transform: `scale(${scale})`,
+        transform: `translateY(${y}px) scale(${scale})`,
       }}
     >
       {icon ? <div style={{ display: "flex", flexShrink: 0 }}>{icon}</div> : null}

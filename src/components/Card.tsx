@@ -17,7 +17,7 @@ export const usePopInOut = (
     frame: local,
     fps,
     durationInFrames: Math.round(POP_IN * fps),
-    config: { damping: 12, stiffness: 200, mass: 0.6 },
+    config: { damping: 18, stiffness: 150, mass: 0.7 },
   });
 
   const outFrames = Math.max(1, Math.round(exitDuration * fps));
@@ -37,10 +37,13 @@ export const usePopInOut = (
     }) *
     (1 - outProgress);
   const scale =
-    interpolate(inProgress, [0, 1], [0.7, 1]) *
-    interpolate(outProgress, [0, 1], [1, 0.85]);
+    interpolate(inProgress, [0, 1], [0.94, 1]) *
+    interpolate(outProgress, [0, 1], [1, 0.96]);
+  // Slides up into place, drifts up a little when leaving.
+  const y =
+    interpolate(inProgress, [0, 1], [34, 0]) + interpolate(outProgress, [0, 1], [0, -14]);
 
-  return { visible, opacity, scale };
+  return { visible, opacity, scale, y };
 };
 
 type CardProps = {
@@ -58,7 +61,7 @@ export const Card: React.FC<CardProps> = ({
   style,
   children,
 }) => {
-  const { visible, opacity, scale } = usePopInOut(enterFrame, exitFrame, exitDuration);
+  const { visible, opacity, scale, y } = usePopInOut(enterFrame, exitFrame, exitDuration);
 
   if (!visible) {
     return null;
@@ -83,7 +86,7 @@ export const Card: React.FC<CardProps> = ({
         maxWidth: 960,
         boxSizing: "border-box",
         opacity,
-        transform: `scale(${scale})`,
+        transform: `translateY(${y}px) scale(${scale})`,
         ...style,
       }}
     >

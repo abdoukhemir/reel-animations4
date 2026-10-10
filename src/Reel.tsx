@@ -3,6 +3,10 @@ import { AbsoluteFill, Audio, cancelRender, continueRender, delayRender, staticF
 import { waitUntilDone } from "./theme";
 import { Captions } from "./components/Captions";
 import { ZoomVideo } from "./components/ZoomVideo";
+import { Hook } from "./scenes/Hook";
+import { Intro } from "./scenes/Intro";
+import { Pace } from "./scenes/Pace";
+import { Problem } from "./scenes/Problem";
 
 export const Reel: React.FC = () => {
   // Block rendering until Poppins 600/700 is loaded.
@@ -20,7 +24,12 @@ export const Reel: React.FC = () => {
       <ZoomVideo />
       <Audio src={staticFile("voice-boosted.wav")} />
 
-      {/* Scenes go here, in chronological order (added step by step) */}
+      {/* Scenes in chronological order; only one group is visible at a time */}
+      <Hook />
+      <Intro />
+      <Pace />
+      <Problem />
+      {/* Next scenes go here (director, connect, monthly, clients, goal, support, closing) */}
 
       {/* Captions are always on top of the overlays */}
       <Captions />
