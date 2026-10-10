@@ -1,5 +1,8 @@
 export const FPS = 30;
 
+/** Voice track is 64.29 s -> 1929 frames at 30 fps. */
+export const DURATION_FRAMES = 1929;
+
 /** Shifts every overlay AND every sound together (seconds, can be negative). */
 export const OVERLAY_OFFSET = 0;
 
@@ -14,10 +17,6 @@ export const SCENE_FADE_OUT = 0.4;
 export const SCENE_GAP = 0.25;
 /** The check icon pops this many frames after its card. */
 export const CHECK_DELAY_FRAMES = 3;
-
-/** Scenes that end on their own: exit this long after the last item's trigger (seconds). */
-export const FORMATION_EXIT_AFTER = 1.2;
-export const TWODAYS_EXIT_AFTER = 1.2;
 
 export type SfxName =
   | "blip"
@@ -60,43 +59,54 @@ export type Trigger = {
 
 /** ONE list, in spoken order: each search starts after the previous match. */
 export const TRIGGERS: Trigger[] = [
-  // Topics
-  { id: "topics-baux", word: "baux", after: 1.5 },
-  { id: "topics-mails", word: "mails", after: 2.5 },
-  { id: "topics-sinistres", word: "sinistres", after: 3.5 },
-  { id: "topics-devis", word: "devis", after: 4.5 },
-  { id: "topics-assemblees", word: "assemblees", after: 5.5 },
-  { id: "topics-recrutements", word: "recrutements", after: 7 },
-  { id: "topics-coproprietaires", word: "coproprietaires", after: 8.5 },
-  // Intro
-  { id: "intro-elvira", word: "elvira", after: 10 },
-  { id: "intro-minute", word: "minute", after: 13 },
-  // Formation 1 jour
-  { id: "formation-badge", word: "resultats", after: 15 },
-  { id: "formation-mails", word: "mails", after: 17 },
-  { id: "formation-bail", word: "bail", after: 21 },
-  { id: "formation-convocation", word: "convocation", after: 22 },
-  { id: "formation-relancer", word: "relancer", after: 24 },
-  { id: "formation-suivre", word: "suivre", after: 25.5 },
-  // Security
-  { id: "security-securite", word: "securite", after: 28 },
-  { id: "security-rgpd", word: "rgpd", after: 31 },
-  // Formation 2 jours
-  { id: "twodays-deux", word: "deux", after: 34 },
-  { id: "twodays-consecutifs", word: "consecutifs", after: 36 },
-  { id: "twodays-proces", word: "proces", after: 39 },
-  { id: "twodays-comparer", word: "comparer", after: 41 },
-  { id: "twodays-modele", word: "modele", after: 43 },
-  // Library
-  { id: "library-bibliotheque", word: "bibliotheque", after: 47 },
-  { id: "library-outils", word: "outils", after: 50 },
-  // Always evolving
-  { id: "evolving-evolue", word: "evolue", after: 54 },
-  // Outsourced AI manager
-  { id: "manager-responsable", word: "responsable", after: 58 },
-  { id: "manager-accompagnons", word: "accompagnons", after: 61 },
-  { id: "manager-evoluer", word: "evoluer", after: 64 },
-  // Closing
-  { id: "closing-longueur", word: "longueur", after: 68 },
-  { id: "closing-contactez", word: "contactez", after: 70.5 },
+  // Hook: "Une formation, c'est essentiel, mais l'IA évolue plus vite que votre entreprise"
+  { id: "hook-formation", word: "formation", after: 0.2 },
+  { id: "hook-essentiel", word: "essentiel", after: 1.1 },
+  { id: "hook-evolue", word: "evolue", after: 3.4 },
+  { id: "hook-vite", word: "vite", after: 3.9 },
+  // Intro: "Bonjour, moi c'est Elvira de chez IZAIA"
+  { id: "intro-elvira", word: "elvira", after: 6.6 },
+  { id: "intro-izaia", word: "izaia", after: 7.5 },
+  // Pace: new tools, new uses, "en une minute"
+  { id: "pace-outils", word: "outils", after: 8.5 },
+  { id: "pace-usages", word: "usages", after: 9.6 },
+  { id: "pace-minute", word: "minute", after: 12 },
+  // Problem: "c'est la vitesse à laquelle évolue l'IA"
+  { id: "problem-probleme", word: "probleme", after: 16.3 },
+  { id: "problem-vitesse", word: "vitesse", after: 18.2 },
+  // Director: "le directeur IA externalisé"
+  { id: "director-directeur", word: "directeur", after: 22.5 },
+  { id: "director-ingenieur", word: "ingenieur", after: 25.9 },
+  { id: "director-developpeur", word: "developpeur", after: 26.8 },
+  { id: "director-expertise", word: "expertise", after: 28.7 },
+  { id: "director-cout", word: "cout", after: 30.8 },
+  { id: "director-recrutement", word: "recrutement", after: 31.9 },
+  // Connect: software, ERP, fixed monthly fee
+  { id: "connect-connectons", word: "connectons", after: 32.8 },
+  { id: "connect-logiciels", word: "logiciels", after: 35.3 },
+  { id: "connect-erp", word: "erp", after: 36.8 },
+  { id: "connect-mensualite", word: "mensualite", after: 37.3 },
+  // Monthly evolution
+  { id: "monthly-mois", word: "mois", after: 39.4 },
+  { id: "monthly-evoluer", word: "evoluer", after: 40.3 },
+  // Clients: what is already in place
+  { id: "clients-clients", word: "clients", after: 44.4 },
+  { id: "clients-agents", word: "agents", after: 44.8 },
+  { id: "clients-loops", word: "loops", after: 45.5 },
+  { id: "clients-automatisation", word: "automatisation", after: 45.8 },
+  { id: "clients-assistants", word: "assistants", after: 47.4 },
+  { id: "clients-standards", word: "standards", after: 48.3 },
+  { id: "clients-bases", word: "bases", after: 49.5 },
+  { id: "clients-tableaux", word: "tableaux", after: 50.8 },
+  // Goal: save time, stay on top of AI
+  { id: "goal-objectif", word: "objectif", after: 53.1 },
+  { id: "goal-gagner", word: "gagner", after: 54.2 },
+  { id: "goal-top", word: "top", after: 56.3 },
+  // Support over time
+  { id: "support-duree", word: "duree", after: 58 },
+  { id: "support-decisif", word: "decisif", after: 59.1 },
+  // Closing: "on fait les deux", "À très bientôt chez IZAIA !"
+  { id: "closing-deux", word: "deux", after: 61.9 },
+  { id: "closing-bientot", word: "bientot", after: 62.8 },
+  { id: "closing-izaia", word: "izaia", after: 63.5 },
 ];

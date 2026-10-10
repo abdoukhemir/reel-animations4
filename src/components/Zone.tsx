@@ -1,8 +1,9 @@
 import React from "react";
 
-// Overlay zone: y 1250 to 1600, 60 px side margins.
-export const ZONE_TOP = 1250;
-export const ZONE_HEIGHT = 350;
+// Overlay zone: y 1170 to 1500, 60 px side margins (bottom third).
+// Captions sit just below it, from y 1520 (see Captions.tsx).
+export const ZONE_TOP = 1170;
+export const ZONE_HEIGHT = 330;
 export const ZONE_SIDE = 60;
 
 export const Zone: React.FC<{ children: React.ReactNode }> = ({ children }) => (

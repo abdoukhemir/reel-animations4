@@ -1,8 +1,8 @@
 import transcript from "../transcript.words.json";
 import { FPS, LEAD, OVERLAY_OFFSET, TRIGGERS } from "./timings";
 
-type Word = { word: string; start: number; end: number };
-const WORDS = transcript as unknown as Word[];
+export type Word = { word: string; start: number; end: number };
+export const WORDS = transcript as unknown as Word[];
 
 /** Lowercase, accents removed, punctuation and spaces removed. */
 export const normalize = (text: string): string =>
