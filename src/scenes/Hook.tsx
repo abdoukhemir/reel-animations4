@@ -1,5 +1,6 @@
 import React from "react";
 import { Chip } from "../components/Chip";
+import { Float } from "../components/Float";
 import { RaceCard } from "../components/RaceCard";
 import { Sfx } from "../components/Sfx";
 import { Slot, Zone } from "../components/Zone";
@@ -19,20 +20,25 @@ export const Hook: React.FC = () => {
     <>
       <Zone>
         <Slot>
-          <Chip
-            enterFrame={withOffset(formation)}
-            exitFrame={withOffset(evolue)}
-            icon={<AnimatedCheck enterFrame={withOffset(essentiel)} size={56} />}
-          >
-            Formation
-          </Chip>
+          <Float from={withOffset(formation)}>
+            <Chip
+              shine
+              enterFrame={withOffset(formation)}
+              exitFrame={withOffset(evolue)}
+              icon={<AnimatedCheck enterFrame={withOffset(essentiel)} size={56} />}
+            >
+              Formation
+            </Chip>
+          </Float>
         </Slot>
         <Slot>
-          <RaceCard
-            enterFrame={withOffset(evolue)}
-            accelerateFrame={withOffset(vite)}
-            exitFrame={withOffset(exit)}
-          />
+          <Float from={withOffset(evolue)} phase={1}>
+            <RaceCard
+              enterFrame={withOffset(evolue)}
+              accelerateFrame={withOffset(vite)}
+              exitFrame={withOffset(exit)}
+            />
+          </Float>
         </Slot>
       </Zone>
 

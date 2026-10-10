@@ -1,5 +1,6 @@
 import React from "react";
 import { COLORS, FONT_FAMILY, SHADOW } from "../theme";
+import { ShineSweep } from "./ShineSweep";
 import { usePopInOut } from "./Card";
 
 type BadgeProps = {
@@ -7,6 +8,8 @@ type BadgeProps = {
   exitFrame?: number;
   exitDuration?: number;
   icon?: React.ReactNode;
+  /** One light sweep across the pill right after it lands. */
+  shine?: boolean;
   children: React.ReactNode;
 };
 
@@ -15,6 +18,7 @@ export const Badge: React.FC<BadgeProps> = ({
   exitFrame,
   exitDuration,
   icon,
+  shine,
   children,
 }) => {
   const { visible, opacity, scale, y } = usePopInOut(enterFrame, exitFrame, exitDuration);
@@ -41,10 +45,12 @@ export const Badge: React.FC<BadgeProps> = ({
         whiteSpace: "nowrap",
         opacity,
         transform: `translateY(${y}px) scale(${scale})`,
+        ...(shine ? ({ position: "relative", overflow: "hidden" } as const) : {}),
       }}
     >
       {icon ? <div style={{ display: "flex", flexShrink: 0 }}>{icon}</div> : null}
       <span>{children}</span>
+      {shine ? <ShineSweep start={enterFrame + 8} /> : null}
     </div>
   );
 };

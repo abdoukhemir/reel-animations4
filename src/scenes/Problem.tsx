@@ -1,9 +1,11 @@
 import React from "react";
 import { CheckItem } from "../components/CheckItem";
 import { Chip } from "../components/Chip";
+import { Float } from "../components/Float";
 import { Sfx } from "../components/Sfx";
 import { SpeedGauge } from "../components/SpeedGauge";
 import { Slot, Zone } from "../components/Zone";
+import { PulseDot } from "../components/icons";
 import { SCENE_FADE_OUT, CHECK_DELAY_FRAMES } from "../timings";
 import { cueFrame, secToFrame, triggerSec, withOffset } from "../triggers";
 
@@ -19,23 +21,35 @@ export const Problem: React.FC = () => {
     <>
       <Zone>
         <Slot>
-          <Chip enterFrame={withOffset(probleme)} exitFrame={withOffset(equipes)}>
-            Le problème
-          </Chip>
+          <Float from={withOffset(probleme)}>
+            <Chip
+              shine
+              enterFrame={withOffset(probleme)}
+              exitFrame={withOffset(equipes)}
+              icon={<PulseDot size={44} />}
+            >
+              Le problème
+            </Chip>
+          </Float>
         </Slot>
         <Slot>
-          <CheckItem
-            enterFrame={withOffset(equipes)}
-            exitFrame={withOffset(vitesse)}
-            label="Vos équipes"
-          />
+          <Float from={withOffset(equipes)} phase={1.5}>
+            <CheckItem
+              shine
+              enterFrame={withOffset(equipes)}
+              exitFrame={withOffset(vitesse)}
+              label="Vos équipes"
+            />
+          </Float>
         </Slot>
         <Slot>
-          <SpeedGauge
-            enterFrame={withOffset(vitesse)}
-            exitFrame={withOffset(exit)}
-            exitDuration={SCENE_FADE_OUT}
-          />
+          <Float from={withOffset(vitesse)} phase={3}>
+            <SpeedGauge
+              enterFrame={withOffset(vitesse)}
+              exitFrame={withOffset(exit)}
+              exitDuration={SCENE_FADE_OUT}
+            />
+          </Float>
         </Slot>
       </Zone>
 

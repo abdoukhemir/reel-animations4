@@ -3,9 +3,10 @@ import { COLORS } from "../theme";
 import { Badge } from "../components/Badge";
 import { CheckItem } from "../components/CheckItem";
 import { Chip } from "../components/Chip";
+import { Float } from "../components/Float";
 import { Sfx } from "../components/Sfx";
 import { Slot, Zone } from "../components/Zone";
-import { ClockIcon, CycleIcon } from "../components/icons";
+import { ClockIcon, CycleIcon, SparkleIcon } from "../components/icons";
 import { CHECK_DELAY_FRAMES } from "../timings";
 import { cueFrame, secToFrame, withOffset } from "../triggers";
 
@@ -25,44 +26,63 @@ export const Pace: React.FC = () => {
     <>
       <Zone>
         <Slot>
-          <Chip enterFrame={withOffset(outils)} exitFrame={withOffset(usages)}>
-            Nouveaux outils
-          </Chip>
+          <Float from={withOffset(outils)}>
+            <Chip
+              shine
+              enterFrame={withOffset(outils)}
+              exitFrame={withOffset(usages)}
+              icon={<SparkleIcon size={52} />}
+            >
+              Nouveaux outils
+            </Chip>
+          </Float>
         </Slot>
         <Slot>
-          <Chip
-            enterFrame={withOffset(usages)}
-            exitFrame={withOffset(minute)}
-            dotColor={COLORS.green}
-          >
-            Nouveaux usages
-          </Chip>
+          <Float from={withOffset(usages)} phase={1.2}>
+            <Chip
+              shine
+              enterFrame={withOffset(usages)}
+              exitFrame={withOffset(minute)}
+              icon={<SparkleIcon size={52} color={COLORS.green} delay={12} />}
+            >
+              Nouveaux usages
+            </Chip>
+          </Float>
         </Slot>
         <Slot>
-          <Badge
-            enterFrame={withOffset(minute)}
-            exitFrame={withOffset(jour)}
-            icon={<ClockIcon size={64} enterFrame={withOffset(minute)} />}
-          >
-            En 1 minute
-          </Badge>
+          <Float from={withOffset(minute)} phase={2.4}>
+            <Badge
+              shine
+              enterFrame={withOffset(minute)}
+              exitFrame={withOffset(jour)}
+              icon={<ClockIcon size={64} enterFrame={withOffset(minute)} />}
+            >
+              En 1 minute
+            </Badge>
+          </Float>
         </Slot>
         <Slot>
-          <Chip
-            enterFrame={withOffset(jour)}
-            exitFrame={withOffset(decrocher)}
-            icon={<CycleIcon size={56} enterFrame={withOffset(jour)} />}
-          >
-            Rester à jour
-          </Chip>
+          <Float from={withOffset(jour)} phase={3.6}>
+            <Chip
+              shine
+              enterFrame={withOffset(jour)}
+              exitFrame={withOffset(decrocher)}
+              icon={<CycleIcon size={56} enterFrame={withOffset(jour)} />}
+            >
+              Rester à jour
+            </Chip>
+          </Float>
         </Slot>
         <Slot>
-          <CheckItem
-            enterFrame={withOffset(decrocher)}
-            exitFrame={withOffset(exit)}
-            exitDuration={EXIT_FADE}
-            label="Ne pas décrocher"
-          />
+          <Float from={withOffset(decrocher)} phase={4.8}>
+            <CheckItem
+              shine
+              enterFrame={withOffset(decrocher)}
+              exitFrame={withOffset(exit)}
+              exitDuration={EXIT_FADE}
+              label="Ne pas décrocher"
+            />
+          </Float>
         </Slot>
       </Zone>
 

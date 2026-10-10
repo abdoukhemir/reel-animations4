@@ -1,5 +1,6 @@
 import React from "react";
 import { Badge } from "../components/Badge";
+import { Float } from "../components/Float";
 import { BAR_STEP, GrowthCard } from "../components/GrowthCard";
 import { Sfx } from "../components/Sfx";
 import { Slot, Zone } from "../components/Zone";
@@ -19,22 +20,27 @@ export const Monthly: React.FC = () => {
       <Zone>
         {/* Top: the rising bars (second) */}
         <Slot top={0} height={200}>
-          <GrowthCard
-            enterFrame={withOffset(evoluer)}
-            exitFrame={withOffset(exit)}
-            exitDuration={FADE}
-          />
+          <Float from={withOffset(evoluer)} amplitude={5}>
+            <GrowthCard
+              enterFrame={withOffset(evoluer)}
+              exitFrame={withOffset(exit)}
+              exitDuration={FADE}
+            />
+          </Float>
         </Slot>
         {/* Bottom: "Chaque mois" (first) */}
         <Slot top={215} height={115}>
-          <Badge
-            enterFrame={withOffset(mois)}
-            exitFrame={withOffset(exit)}
-            exitDuration={FADE}
-            icon={<CalendarIcon size={52} />}
-          >
-            Chaque mois
-          </Badge>
+          <Float from={withOffset(mois)} amplitude={4} phase={1}>
+            <Badge
+              shine
+              enterFrame={withOffset(mois)}
+              exitFrame={withOffset(exit)}
+              exitDuration={FADE}
+              icon={<CalendarIcon size={52} />}
+            >
+              Chaque mois
+            </Badge>
+          </Float>
         </Slot>
       </Zone>
 

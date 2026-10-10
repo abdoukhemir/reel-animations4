@@ -2,6 +2,7 @@ import React from "react";
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { COLORS, FONT_FAMILY, RADIUS, SHADOW } from "../theme";
 import { POP_IN, POP_OUT } from "../timings";
+import { ShineSweep } from "./ShineSweep";
 
 /** Shared spring pop-in plus fade-and-scale-out. Frames already include OVERLAY_OFFSET. */
 export const usePopInOut = (
@@ -51,6 +52,8 @@ type CardProps = {
   exitFrame?: number;
   exitDuration?: number;
   style?: React.CSSProperties;
+  /** One light sweep across the card right after it lands. */
+  shine?: boolean;
   children: React.ReactNode;
 };
 
@@ -59,6 +62,7 @@ export const Card: React.FC<CardProps> = ({
   exitFrame,
   exitDuration,
   style,
+  shine,
   children,
 }) => {
   const { visible, opacity, scale, y } = usePopInOut(enterFrame, exitFrame, exitDuration);
@@ -87,10 +91,12 @@ export const Card: React.FC<CardProps> = ({
         boxSizing: "border-box",
         opacity,
         transform: `translateY(${y}px) scale(${scale})`,
+        ...(shine ? ({ position: "relative", overflow: "hidden" } as const) : {}),
         ...style,
       }}
     >
       {children}
+      {shine ? <ShineSweep start={enterFrame + 8} /> : null}
     </div>
   );
 };

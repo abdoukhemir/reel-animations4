@@ -1,6 +1,7 @@
 import React from "react";
 import { Badge } from "../components/Badge";
 import { ConnectDiagram } from "../components/ConnectDiagram";
+import { Float } from "../components/Float";
 import { Sfx } from "../components/Sfx";
 import { Slot, Zone } from "../components/Zone";
 import { CalendarIcon } from "../components/icons";
@@ -31,14 +32,17 @@ export const Connect: React.FC = () => {
         </Slot>
         {/* Bottom: the fixed monthly fee */}
         <Slot top={215} height={115}>
-          <Badge
-            enterFrame={withOffset(mensualite)}
-            exitFrame={withOffset(exit)}
-            exitDuration={FADE}
-            icon={<CalendarIcon size={52} />}
-          >
-            Mensualité fixe
-          </Badge>
+          <Float from={withOffset(mensualite)} amplitude={4} phase={1}>
+            <Badge
+              shine
+              enterFrame={withOffset(mensualite)}
+              exitFrame={withOffset(exit)}
+              exitDuration={FADE}
+              icon={<CalendarIcon size={52} />}
+            >
+              Mensualité fixe
+            </Badge>
+          </Float>
         </Slot>
       </Zone>
 

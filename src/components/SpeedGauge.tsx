@@ -76,6 +76,7 @@ export const SpeedGauge: React.FC<SpeedGaugeProps> = ({ enterFrame, exitFrame, e
     enterFrame={enterFrame}
     exitFrame={exitFrame}
     exitDuration={exitDuration}
+    shine
     style={{ flexDirection: "row", gap: 36, padding: "20px 52px 20px 36px", textAlign: "left" }}
   >
     <Gauge enterFrame={enterFrame} />

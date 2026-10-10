@@ -1,4 +1,5 @@
 import React from "react";
+import { Float } from "../components/Float";
 import { NameTag } from "../components/NameTag";
 import { Sfx } from "../components/Sfx";
 import { Slot, Zone } from "../components/Zone";
@@ -14,12 +15,14 @@ export const Intro: React.FC = () => {
     <>
       <Zone>
         <Slot>
-          <NameTag
-            enterFrame={withOffset(elvira)}
-            exitFrame={withOffset(exit)}
-            name="Elvira"
-            brand="IZAIA"
-          />
+          <Float from={withOffset(elvira)}>
+            <NameTag
+              enterFrame={withOffset(elvira)}
+              exitFrame={withOffset(exit)}
+              name="Elvira"
+              brand="IZAIA"
+            />
+          </Float>
         </Slot>
       </Zone>
 

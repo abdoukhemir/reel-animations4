@@ -3,6 +3,7 @@ import { useCurrentFrame } from "remotion";
 import { ramp } from "../anim";
 import { COLORS } from "../theme";
 import { Card } from "./Card";
+import { SparkleIcon } from "./icons";
 
 type TitleCardProps = {
   enterFrame: number;
@@ -20,8 +21,15 @@ export const TitleCard: React.FC<TitleCardProps> = ({ enterFrame, exitFrame, exi
       enterFrame={enterFrame}
       exitFrame={exitFrame}
       exitDuration={exitDuration}
+      shine
       style={{ flexDirection: "column", alignItems: "center", gap: 12, padding: "32px 72px" }}
     >
+      <div style={{ position: "absolute", top: 18, right: 26, opacity: ramp(frame, enterFrame + 14, 10) }}>
+        <SparkleIcon size={40} />
+      </div>
+      <div style={{ position: "absolute", bottom: 26, left: 30, opacity: ramp(frame, enterFrame + 22, 10) }}>
+        <SparkleIcon size={26} delay={20} color={COLORS.darkBlue} />
+      </div>
       <span style={{ fontSize: 76, lineHeight: 1.05 }}>Directeur IA</span>
       <div style={{ position: "relative", paddingBottom: 10 }}>
         <span style={{ fontSize: 64, lineHeight: 1.1, color: COLORS.orange }}>externalisé</span>

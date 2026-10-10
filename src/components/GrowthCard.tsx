@@ -23,18 +23,22 @@ export const GrowthCard: React.FC<GrowthCardProps> = ({ enterFrame, exitFrame, e
       enterFrame={enterFrame}
       exitFrame={exitFrame}
       exitDuration={exitDuration}
+      shine
       style={{ flexDirection: "row", gap: 44, padding: "24px 60px", textAlign: "left" }}
     >
       <div style={{ display: "flex", alignItems: "flex-end", gap: 14, height: 120 }}>
         {HEIGHTS.map((h, i) => {
           const grow = ramp(frame, enterFrame + 4 + i * BAR_STEP, 16);
           const last = i === HEIGHTS.length - 1;
+          // Once risen, the bars breathe a little.
+          const settled = ramp(frame, enterFrame + 4 + (HEIGHTS.length - 1) * BAR_STEP + 16, 10);
+          const breathe = 1 + 0.035 * Math.sin((frame - enterFrame) * 0.11 + i * 0.9) * settled;
           return (
             <div
               key={i}
               style={{
                 width: 38,
-                height: h * grow,
+                height: h * grow * breathe,
                 borderRadius: 10,
                 backgroundColor: last ? COLORS.orange : COLORS.darkBlue,
                 opacity: last ? 1 : 0.45 + i * 0.15,

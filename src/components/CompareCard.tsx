@@ -34,6 +34,7 @@ export const CompareCard: React.FC<CompareCardProps> = ({
       enterFrame={enterFrame}
       exitFrame={exitFrame}
       exitDuration={exitDuration}
+      shine
       style={{
         flexDirection: "column",
         alignItems: "stretch",
@@ -44,7 +45,7 @@ export const CompareCard: React.FC<CompareCardProps> = ({
         fontSize: 36,
       }}
     >
-      <Row label="IZAIA" color={COLORS.orange} progress={ours} />
+      <Row label="IZAIA" color={COLORS.orange} progress={ours} tip />
       <Row label="Recrutement" color={COLORS.darkBlue} progress={hire} />
     </Card>
   );

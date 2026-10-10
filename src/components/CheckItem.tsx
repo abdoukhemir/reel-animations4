@@ -9,6 +9,7 @@ type CheckItemProps = {
   exitFrame?: number;
   exitDuration?: number;
   label: string;
+  shine?: boolean;
 };
 
 export const CheckItem: React.FC<CheckItemProps> = ({
@@ -16,6 +17,7 @@ export const CheckItem: React.FC<CheckItemProps> = ({
   exitFrame,
   exitDuration,
   label,
+  shine,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -31,6 +33,7 @@ export const CheckItem: React.FC<CheckItemProps> = ({
       enterFrame={enterFrame}
       exitFrame={exitFrame}
       exitDuration={exitDuration}
+      shine={shine}
       style={{ flexDirection: "row", gap: 28, textAlign: "left" }}
     >
       <svg

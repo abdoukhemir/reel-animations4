@@ -114,8 +114,18 @@ export const AnimatedCheck: React.FC<IconProps & { enterFrame: number }> = ({
     config: { damping: 14, stiffness: 180, mass: 0.7 },
   });
 
+  const burst = interpolate(frame, [enterFrame + 2, enterFrame + 20], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
   return (
-    <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 64 64"
+      style={{ flexShrink: 0, display: "block", overflow: "visible" }}
+    >
       <circle
         cx="32"
         cy="32"
@@ -125,6 +135,17 @@ export const AnimatedCheck: React.FC<IconProps & { enterFrame: number }> = ({
         strokeOpacity={0.25}
         strokeWidth={5}
       />
+      {burst > 0 && burst < 1 && (
+        <circle
+          cx="32"
+          cy="32"
+          r={32 + burst * 16}
+          fill="none"
+          stroke={COLORS.green}
+          strokeWidth={4}
+          strokeOpacity={1 - burst}
+        />
+      )}
       <g transform={`translate(32 32) scale(${s}) translate(-32 -32)`}>
         <circle cx="32" cy="32" r="32" fill={COLORS.green} />
         <path
@@ -141,27 +162,38 @@ export const AnimatedCheck: React.FC<IconProps & { enterFrame: number }> = ({
 };
 
 
-/** Gear: eight teeth around a ring. Designed for a beige chip. */
-export const GearIcon: React.FC<IconProps> = ({ size = 56 }) => (
-  <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
-    <g transform="translate(32 32)">
-      {[0, 45, 90, 135].map((a) => (
-        <rect key={a} x={-5} y={-29} width={10} height={58} rx={4} fill={COLORS.orange} transform={`rotate(${a})`} />
-      ))}
-      <circle r={21} fill={COLORS.orange} />
-      <circle r={9} fill={COLORS.beige} />
-    </g>
-  </svg>
-);
+/** Gear: eight teeth around a ring; turns slowly once enterFrame is reached. */
+export const GearIcon: React.FC<IconProps & { enterFrame?: number }> = ({ size = 56, enterFrame = 0 }) => {
+  const frame = useCurrentFrame();
+  const angle = Math.max(0, frame - enterFrame) * 1.4;
 
-/** Code window with "</>" . */
-export const CodeIcon: React.FC<IconProps> = ({ size = 56 }) => (
-  <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
-    <rect x="4" y="10" width="56" height="44" rx="10" fill={COLORS.darkBlue} />
-    <path d="M26 24 L16 32 L26 40" fill="none" stroke={COLORS.white} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M38 24 L48 32 L38 40" fill="none" stroke={COLORS.orange} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
+      <g transform={`translate(32 32) rotate(${angle})`}>
+        {[0, 45, 90, 135].map((a) => (
+          <rect key={a} x={-5} y={-29} width={10} height={58} rx={4} fill={COLORS.orange} transform={`rotate(${a})`} />
+        ))}
+        <circle r={21} fill={COLORS.orange} />
+        <circle r={9} fill={COLORS.beige} />
+      </g>
+    </svg>
+  );
+};
+
+/** Code window with "</>" and a blinking cursor. */
+export const CodeIcon: React.FC<IconProps> = ({ size = 56 }) => {
+  const frame = useCurrentFrame();
+  const on = Math.floor(frame / 14) % 2 === 0;
+
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
+      <rect x="4" y="10" width="56" height="44" rx="10" fill={COLORS.darkBlue} />
+      <path d="M24 24 L14 32 L24 40" fill="none" stroke={COLORS.white} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M40 24 L50 32 L40 40" fill="none" stroke={COLORS.orange} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+      <rect x="30" y="25" width="4" height="14" rx="2" fill={COLORS.white} opacity={on ? 1 : 0.1} />
+    </svg>
+  );
+};
 
 /** Ring that fills up to ~92% shortly after enterFrame. */
 export const RingIcon: React.FC<IconProps & { enterFrame: number }> = ({ size = 56, enterFrame }) => {
@@ -190,6 +222,38 @@ export const RingIcon: React.FC<IconProps & { enterFrame: number }> = ({ size = 
         strokeDashoffset={circ * (1 - p)}
         transform="rotate(-90 32 32)"
       />
+    </svg>
+  );
+};
+
+/** Four-point star that twinkles and turns slowly. */
+export const SparkleIcon: React.FC<IconProps & { color?: string; delay?: number }> = ({
+  size = 52,
+  color = COLORS.orange,
+  delay = 0,
+}) => {
+  const frame = useCurrentFrame();
+  const pulse = 1 + 0.14 * Math.sin((frame + delay) * 0.18);
+  const turn = (frame + delay) * 0.8;
+
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block" }}>
+      <g transform={`translate(32 32) rotate(${turn}) scale(${pulse}) translate(-32 -32)`}>
+        <path d="M32 4 C34 22 42 30 60 32 C42 34 34 42 32 60 C30 42 22 34 4 32 C22 30 30 22 32 4 Z" fill={color} />
+      </g>
+    </svg>
+  );
+};
+
+/** A solid dot with a ring that keeps rippling outward. */
+export const PulseDot: React.FC<IconProps & { color?: string }> = ({ size = 40, color = COLORS.orange }) => {
+  const frame = useCurrentFrame();
+  const pulse = (frame % 36) / 36;
+
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" style={{ flexShrink: 0, display: "block", overflow: "visible" }}>
+      <circle cx="32" cy="32" r="16" fill={color} />
+      <circle cx="32" cy="32" r={16 + pulse * 20} fill="none" stroke={color} strokeWidth={4} strokeOpacity={(1 - pulse) * 0.6} />
     </svg>
   );
 };

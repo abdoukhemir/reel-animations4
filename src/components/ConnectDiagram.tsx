@@ -18,6 +18,8 @@ const TARGETS = [
 ];
 
 type PopBoxProps = {
+  /** Phase of a slow sway (radians); leave out for a node that stays still. */
+  bob?: number;
   enterFrame: number;
   exitFrame?: number;
   exitDuration?: number;
@@ -25,8 +27,10 @@ type PopBoxProps = {
   children: React.ReactNode;
 };
 
-const PopBox: React.FC<PopBoxProps> = ({ enterFrame, exitFrame, exitDuration, style, children }) => {
+const PopBox: React.FC<PopBoxProps> = ({ bob, enterFrame, exitFrame, exitDuration, style, children }) => {
+  const frame = useCurrentFrame();
   const { visible, opacity, scale, y } = usePopInOut(enterFrame, exitFrame, exitDuration);
+  const sway = bob === undefined ? 0 : Math.sin(frame * 0.07 + bob) * 4;
   if (!visible) {
     return null;
   }
@@ -40,7 +44,7 @@ const PopBox: React.FC<PopBoxProps> = ({ enterFrame, exitFrame, exitDuration, st
         fontFamily: FONT_FAMILY,
         fontWeight: 700,
         opacity,
-        transform: `translateY(${y}px) scale(${scale})`,
+        transform: `translateY(${y + sway}px) scale(${scale})`,
         ...style,
       }}
     >
@@ -125,20 +129,26 @@ export const ConnectDiagram: React.FC<Props> = ({
                 strokeWidth={5}
                 strokeLinecap="round"
               />
-              {showDot && (
-                <circle
-                  cx={x1 + (x2 - x1) * t}
-                  cy={y1 + (link.target.y - y1) * t}
-                  r={8}
-                  fill={COLORS.orange}
-                />
-              )}
+              {showDot &&
+                [0, 0.5].map((offset) => {
+                  const u = (t + offset) % 1;
+                  return (
+                    <circle
+                      key={offset}
+                      cx={x1 + (x2 - x1) * u}
+                      cy={y1 + (link.target.y - y1) * u}
+                      r={8}
+                      fill={COLORS.orange}
+                    />
+                  );
+                })}
             </g>
           );
         })}
       </svg>
 
       <PopBox
+        bob={0}
         enterFrame={iaFrame}
         exitFrame={exitFrame}
         exitDuration={exitDuration}
@@ -160,6 +170,7 @@ export const ConnectDiagram: React.FC<Props> = ({
       {["Logiciels métiers", "ERP"].map((label, i) => (
         <PopBox
           key={label}
+          bob={1.7 + i * 1.7}
           enterFrame={links[i].start + 8}
           exitFrame={exitFrame}
           exitDuration={exitDuration}

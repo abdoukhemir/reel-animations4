@@ -29,6 +29,7 @@ export const NameTag: React.FC<NameTagProps> = ({
       enterFrame={enterFrame}
       exitFrame={exitFrame}
       exitDuration={exitDuration}
+      shine
       style={{ flexDirection: "row", gap: 30, padding: "28px 64px 28px 44px", textAlign: "left" }}
     >
       <div
